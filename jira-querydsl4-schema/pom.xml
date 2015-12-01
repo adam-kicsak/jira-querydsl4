@@ -28,7 +28,7 @@
   <artifactId>jira-querydsl4-schema</artifactId>
   <packaging>bundle</packaging>
 
-  <name>QueryDSL 4 Schema for Jira</name>
+  <name>QueryDSL 4 Schema</name>
   <description>Provides the Querydsl 4 query classes for the database of the JIRA</description>
 
   <organization>

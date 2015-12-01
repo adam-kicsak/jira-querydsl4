@@ -27,7 +27,7 @@
 
   <artifactId>jira-querydsl4-test</artifactId>
   <packaging>bundle</packaging>
-  <name>QueryDSL 4 Test Plugin</name>
+  <name>QueryDSL 4 Test</name>
 
   <organization>
     <name>EverIT Kft.</name>
