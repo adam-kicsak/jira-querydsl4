@@ -25,7 +25,7 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
 
-  <artifactId>jira-querydsl4-schema</artifactId>
+  <artifactId>org.everit.jira.querydsl4.schema</artifactId>
   <packaging>bundle</packaging>
 
   <name>QueryDSL 4 Schema</name>
@@ -58,6 +58,9 @@
             <Export-Package>
               org.everit.jira.querydsl.schema
             </Export-Package>
+            <Require-Bundle>
+              org.everit.jira.querydsl4.support;bundle-version="[0.0.1,1.0.0)",
+            </Require-Bundle>
           </instructions>
         </configuration>
       </plugin>
@@ -79,7 +82,7 @@
           <pluginDependencies>
             <pluginDependency>
               <groupId>${project.groupId}</groupId>
-              <artifactId>jira-querydsl4-support</artifactId>
+              <artifactId>org.everit.jira.querydsl4.support</artifactId>
             </pluginDependency>
           </pluginDependencies>
           <instructions>
@@ -100,8 +103,9 @@
 
     <dependency>
       <groupId>${project.groupId}</groupId>
-      <artifactId>jira-querydsl4-support</artifactId>
+      <artifactId>org.everit.jira.querydsl4.support</artifactId>
       <version>${project.version}</version>
+      <scope>provided</scope>
     </dependency>
 
   </dependencies>

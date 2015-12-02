@@ -25,7 +25,7 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
 
-  <artifactId>jira-querydsl4-support</artifactId>
+  <artifactId>org.everit.jira.querydsl4.support</artifactId>
   <packaging>bundle</packaging>
   <name>QueryDSL 4 Support</name>
   <description>Provides the Querydsl 4 for the Jira as a plugin</description>

@@ -25,7 +25,7 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
 
-  <artifactId>jira-querydsl4-test</artifactId>
+  <artifactId>org.everit.jira.querydsl4.test</artifactId>
   <packaging>bundle</packaging>
   <name>QueryDSL 4 Test</name>
 
@@ -55,6 +55,10 @@
             </Import-Package>
             <Export-Package>
             </Export-Package>
+            <Require-Bundle>
+              org.everit.jira.querydsl4.support;bundle-version="[0.0.1,1.0.0)",
+              org.everit.jira.querydsl4.schema;bundle-version="[0.0.1,1.0.0)"
+            </Require-Bundle>
           </instructions>
         </configuration>
       </plugin>
@@ -76,11 +80,11 @@
           <pluginDependencies>
             <pluginDependency>
               <groupId>${project.groupId}</groupId>
-              <artifactId>jira-querydsl4-support</artifactId>
+              <artifactId>org.everit.jira.querydsl4.support</artifactId>
             </pluginDependency>
             <pluginDependency>
               <groupId>${project.groupId}</groupId>
-              <artifactId>jira-querydsl4-schema</artifactId>
+              <artifactId>org.everit.jira.querydsl4.schema</artifactId>
             </pluginDependency>
           </pluginDependencies>
           <instructions>
@@ -109,14 +113,14 @@
 
       <dependency>
         <groupId>${project.groupId}</groupId>
-        <artifactId>jira-querydsl4-support</artifactId>
+        <artifactId>org.everit.jira.querydsl4.support</artifactId>
         <version>${project.version}</version>
         <scope>provided</scope>
       </dependency>
 
       <dependency>
         <groupId>${project.groupId}</groupId>
-        <artifactId>jira-querydsl4-schema</artifactId>
+        <artifactId>org.everit.jira.querydsl4.schema</artifactId>
         <version>${project.version}</version>
         <scope>provided</scope>
       </dependency>
@@ -147,7 +151,12 @@
 
     <dependency>
       <groupId>${project.groupId}</groupId>
-      <artifactId>jira-querydsl4-schema</artifactId>
+      <artifactId>org.everit.jira.querydsl4.support</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>org.everit.jira.querydsl4.schema</artifactId>
     </dependency>
 
     <dependency>
